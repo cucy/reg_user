@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+{% load static %}
+{% load crispy_forms_tags %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'verder/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+
+    <!-- Your custom styles (optional) -->
+    <style>
+        .intro-2 {
+            background: url("{% static 'login_bg.jpg' %}") no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+</head>
+
+<body class="fixed-sn white-skin">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!--Intro Section-->
+        <section class="view intro-2 hm-stylish-strong">
+            <div class="full-bg-img flex-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
+
+                            <!--Form with header-->
+                            <form action="">
+                            <div class="card wow fadeIn" data-wow-delay="0.3s">
+                                <div class="card-body">
+
+                                    <!--Header-->
+                                    <div class="form-header purple-gradient">
+                                        <h3><i class="fa fa-user mt-2 mb-2"></i> 登 录:</h3>
+                                    </div>
+
+                                    <!--Body-->
+                                    <div class="md-form">
+                                        <i class="fa fa-user prefix white-text"></i>
+                                        <input type="text" id="orangeForm-name" class="form-control">
+                                        <label for="orangeForm-name">用户名</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-lock prefix white-text"></i>
+                                        <input type="password" id="orangeForm-pass" class="form-control">
+                                        <label for="orangeForm-pass">密码</label>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button class="btn purple-gradient btn-lg">登 录</button>
+                                        <hr>
+                                        <div class="inline-ul text-center d-flex justify-content-center">
+                                            <a class="icons-sm tw-ic">忘记密码</a>
+                                            <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text"> </i></a>
+                                            <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--/Form with header--></form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+    <!--Main Navigation-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{#{% extends "registration/registration_base.html" %}#}
+{% extends "base.html" %}
+
+{% block title %}用户退出{% endblock %}
+
+{% block content %}
+
+
+<section class="pb-4">
+
+    <!--Panel-->
+    <div class="card text-center">
+            <h3 class="card-header success-color white-text">用 户 退 出</h3>
+        <div class="card-body">
+            <p class="card-text">{{ request.user }}退出成功，点击返回登录页</p>
+            <a href="/"  class="btn btn-success waves-effect waves-light">返 回</a>
+        </div>
+    </div>
+    <!--/.Panel-->
+
+</section>
+{% endblock %}
