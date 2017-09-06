@@ -1,0 +1,20 @@
+{% extends "user/base_user.html" %}
+
+{% block title %}
+    {{ block.super }} - 创建用户
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="offset-by-two eight columns">
+            <div class="center">
+                <a href="{% url 'dj-auth:resend_activation' %}">忘记激活邮件?</a>
+            </div>
+            <form  action="{% url 'dj-auth:create' %}" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">创建新用户</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
