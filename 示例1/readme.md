@@ -4,10 +4,11 @@
 	对应模板 registration_form.html
 
 ## 2. 发送激活账号邮箱
+```
 `REGISTRATION_EMAIL_HTML` 设置为False使用`activation_email.txt`为邮箱模板发送,
-设置为True时使用`activation_email.html`为模板发送,
-默认是`True`通过邮箱模板发送邮件到客户邮箱中.
 
+设置为True时使用`activation_email.html`为模板发送,默认是`True`通过邮箱模板发送邮件到客户邮箱中.
+```
 ## 3. 发送邮箱完成后回显页面
 /accounts/register/complete/
 	对应模板 registration_complete.html
